@@ -1,0 +1,81 @@
+@font-face {
+    font-family: "golos-text_bold";
+    src: url("../fonts/golos-text_bold.ttf");
+}
+
+@font-face {
+    font-family: "golos-text_regular";
+    src: url("../fonts/golos-text_regular.ttf");
+}
+
+.header__titile_one[data-theme="eng"] {
+    display: none;
+}
+
+.header__titile_one[data-theme="ru"] {
+    display: block;
+}
+
+.header__link_colThree[data-theme="eng"] {
+    display: none;
+}
+
+.header__link_colThree[data-theme="ru"] {
+    display: block;
+}
+
+.contOne__text[data-theme="eng"] {
+    display: none;
+    font-family: golos-text_bold;
+}
+
+.contOne__text[data-theme="ru"] {
+    display: block;
+    font-family: golos-text_bold;
+}
+
+.contTwo__bacgroundText[data-theme="eng"] {
+    display: none;
+    font-family: golos-text_regular;
+}
+
+.contTwo__bacgroundText[data-theme="ru"] {
+    display: block;
+    font-family: golos-text_regular;
+}
+
+.contThree__text[data-theme="eng"] {
+    display: none;
+    font-family: golos-text_bold;
+    font-size: 4vw;
+}
+
+.contThree__text[data-theme="ru"] {
+    display: block;
+    font-family: golos-text_bold;
+    font-size: 4vw;
+}
+
+a {
+    font-family: golos-text_bold;
+}
+
+.contFour__topic {
+    font-family: golos-text_bold;
+}
+
+.modal__leng[data-theme="eng"] {
+    display: block;
+}
+
+.modal__leng[data-theme="ru"] {
+    display: none;
+}
+
+.linkProgecr[data-theme="ru"] {
+    display: block;
+}
+
+.linkProgecr[data-theme="eng"] {
+    display: none;
+}

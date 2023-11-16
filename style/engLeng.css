@@ -1,0 +1,77 @@
+@font-face {
+    font-family: "Syncopate-Bold";
+    src: url("../fonts/Syncopate-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Syne";
+    src: url("../fonts/Syne.ttf");
+}
+
+body {
+    font-family: Syncopate-Bold;
+}
+
+a {
+    font-family: Syncopate-Bold;
+}
+
+.contTwo p {
+    font-family: Syne;
+}
+
+.header__titile_one[data-theme="eng"] {
+    display: block;
+}
+
+.header__titile_one[data-theme="ru"] {
+    display: none;
+}
+
+.header__link_colThree[data-theme="eng"] {
+    display: block;
+}
+
+.header__link_colThree[data-theme="ru"] {
+    display: none;
+}
+
+.contOne__text[data-theme="eng"] {
+    display: block;
+}
+
+.contOne__text[data-theme="ru"] {
+    display: none;
+}
+
+.contTwo__bacgroundText[data-theme="eng"] {
+    display: block;
+}
+
+.contTwo__bacgroundText[data-theme="ru"] {
+    display: none;
+}
+
+.contThree__text[data-theme="eng"] {
+    display: block;
+}
+
+.contThree__text[data-theme="ru"] {
+    display: none;
+}
+
+.modal__leng[data-theme="eng"] {
+    display: none;
+}
+
+.modal__leng[data-theme="ru"] {
+    display: block;
+}
+
+.linkProgecr[data-theme="eng"] {
+    display: block;
+}
+
+.linkProgecr[data-theme="ru"] {
+    display: none;
+}

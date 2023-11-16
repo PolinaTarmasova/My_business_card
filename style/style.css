@@ -1,0 +1,191 @@
+body {
+    background-color: #E7D8CB;
+    color: black;
+}
+
+a {
+    font-family: CruinnBold;
+    color: black;
+    text-decoration: none;
+}
+
+ul {
+    padding: 0%;
+    margin: 0%;
+}
+
+.header__logotype {
+    width: 15vw;
+    padding: 2vw;
+}
+
+.header__titile_one,
+.header__titile_two {
+    font-size: 3vw;
+}
+
+.header__theme_sun {
+    width: 4vw;
+}
+
+.header__triangle {
+    margin-left: 2vw;
+}
+
+.header__link_colThree {
+    margin-right: 2vw;
+    margin-left: 1vw;
+    font-size: 3vw;
+}
+
+.contOne {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 5vw;
+    overflow: hidden;
+}
+
+.contOne__text_scroll {
+    width: 300%;
+}
+
+
+.contOne__text_scroll p {
+    white-space: nowrap;
+    width: 200%;
+    animation: contOne__text_scroll 25s linear infinite;
+}
+
+@keyframes contOne__text_scroll {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.contTwo__photo_mtPhoto {
+    width: 35vw;
+    border-radius: 50px;
+}
+
+.contTwo__text_textAboutMe {
+    font-size: xx-large;
+}
+
+.contThree__text {
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 3vw;
+}
+
+.contThree__massengers {
+    width: 10vw;
+    padding: 5px;
+}
+
+.contFour__cardFront,
+.contFour__cardBack,
+.contFour__cardUxUi {
+    width: 20vw;
+    height: 30vw;
+    border-radius: 50px;
+    margin: 30% auto;
+    background-color: #E3DD4E;
+    cursor: pointer;
+}
+
+.contFour__cardBack {
+    background-color: #F16363;
+}
+
+.contFour__cardUxUi {
+    background-color: #6CDAC6;
+}
+
+.contFour__topic {
+    font-family: Syncopate-Bold;
+    font-size: 3vw;
+    padding-top: 70%;
+    padding-left: 5%;
+    color: black;
+}
+
+.footer__photo_logoCollege {
+    width: 15vw;
+}
+
+.footer__information {
+    margin-left: auto;
+}
+
+.footer__massengers {
+    width: 6vw;
+    margin-right: 2vw;
+}
+
+.header__sun {
+    width: 4vw;
+}
+
+.header__mon {
+    width: 3vw;
+}
+
+.modalContainer,
+.modalContainer__cards_yellow,
+.modalContainer__cards_purpur,
+.modalContainer__cards_blu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: none;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modalLeng {
+    padding: 1vw;
+    margin-top: 10vw;
+    margin-right: 2vw;
+    width: 10vw;
+    text-align: center;
+    margin-left: auto;
+}
+
+.modalLeng a {
+    font-size: 3vw;
+}
+
+.modalCard {
+    width: 40vw;
+    height: 30vw;
+    padding: 2vw 0;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8vw;
+    overflow: auto;
+}
+
+.modalCardYellow {
+    background-color: #E3DD4E;
+}
+
+.modalCardPurpur {
+    background-color: #F16363;
+}
+
+.modalCardBlu {
+    background-color: #6CDAC6;
+}
+
+.modalCard a {
+    color: black;
+    font-size: 2vw;
+    text-align: center;
+}

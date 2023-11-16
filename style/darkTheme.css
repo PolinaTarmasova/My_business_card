@@ -1,0 +1,57 @@
+body {
+    background-color: #1E1E1E;
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+.modalLeng {
+    background-color: white;
+}
+
+.modalLeng a {
+    color: #1E1E1E;
+}
+
+.header__theme[data-theme="moon"] {
+    display: none;
+}
+
+.header__theme[data-theme="sun"] {
+    display: block;
+}
+
+.header__logotype[data-theme="dark"] {
+    display: none;
+}
+
+.header__logotype[data-theme="ligth"] {
+    display: block;
+}
+
+.contThree__massengers[data-theme="dark"] {
+    display: none;
+}
+
+.contThree__massengers[data-theme="ligth"] {
+    display: block;
+}
+
+.footer__massengers[data-theme="dark"] {
+    display: none;
+}
+
+
+.footer__massengers[data-theme="ligth"] {
+    display: block;
+}
+
+.footer__photo_logoCollege[data-theme="dark"] {
+    display: none;
+}
+
+.footer__photo_logoCollege[data-theme="ligth"] {
+    display: block;
+}

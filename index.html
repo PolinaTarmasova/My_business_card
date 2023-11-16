@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logoBlack.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/styleResetFile.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" id="theme" href="style/darkTheme.css">
+    <link rel="stylesheet" id="lenguage" href="style/engLeng.css">
+    <title>Визитная карточка</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row d-flex">
+                <div class="col-4">
+                    <img class="header__logotype" data-theme="ligth" src="img/logoWhite.png" alt="логотип">
+                    <img class="header__logotype" data-theme="dark" src="img/logoBlack.png" alt="логотип">
+                </div>
+                <div class="col-4 text-center align-self-center">
+                    <a href="#aboutMe">
+                        <h2 class="header__titile_one" data-theme="eng">about me</h2>
+                        <h2 class="header__titile_one" data-theme="ru">обо мне</h2>
+                    </a>
+                    <a href="#myWorks">
+                        <h2 class="header__titile_one" data-theme="eng">my works</h2>
+                        <h2 class="header__titile_one" data-theme="ru">мои работы</h2>
+                    </a>
+                </div>
+                <div class="col-4 d-flex justify-content-end align-self-center">
+                    <a href="#">
+                        <img class="header__theme header__sun" data-theme="sun" src="img/sunTheme.png"
+                            alt="изменить тему">
+                        <img class="header__theme header__mon" data-theme="moon" src="img/moonTheme.png"
+                            alt="изменить тему">
+                    </a>
+                    <a href="#" class="align-self-center header__link_colThree" data-theme="ru">RU</a>
+                    <a href="#" class="align-self-center header__link_colThree" data-theme="eng">ENG</a>
+                </div>
+            </div>
+
+            <!--Модальное окно смены языка-->
+            <div class="modalContainer">
+                <div class="modalLeng">
+                    <div class="modal-content">
+                        <a href="#" class="modal__leng" data-theme="ru">RU</a>
+                        <a href="#" class="modal__leng" data-theme="eng">ENG</a>
+                    </div>
+                </div>
+            </div>
+            <!--Модальное окно смены языка-->
+
+        </div>
+    </header>
+    <main>
+        <div class="contOne">
+            <div class="contOne__text_scroll d-flex">
+                <p class="contOne__text" data-theme="eng">Hello, my name is Polina Tarmasova Hello, my name is Polina
+                    Tarmasova Hello, my name is Polina Tarmasova Hello, my name is Polina
+                    Tarmasova </p>
+            </div>
+            <div class="contOne__text_scroll d-flex">
+                <p class="contOne__text" data-theme="ru">Привет, меня зовут Полина Тармасова Привет, меня зовут Полина
+                    Тармасова, Привет, меня зовут Полина Тармасова Привет, меня зовут Полина
+                    Тармасова </p>
+            </div>
+        </div>
+        <div class="container contTwo">
+            <div class="row d-flex">
+                <div class="col-md-12 col-lg-6" id="contTwo__photo_block">
+                    <div class="text-center" id="contTwo__photo_center"></div>
+                    <img class="contTwo__photo_mtPhoto" id="contTwo__myPhoto" src="img/myPhoto.jpg" alt="мое фото">
+                </div>
+                <div class="col-md-12 col-lg-6 contTwo__text_textAboutMe text-center align-self-center" id="aboutMe">
+                    <p class="contTwo__bacgroundText" data-theme="eng">
+                        In my life, I have worked as a cashier, a zoo employee, a potter, a laundry worker, and a
+                        builder. But finally, I have found my place in the IT industry! I am currently studying to
+                        become a frontend developer. My knowledge already includes web design, a solid understanding of
+                        JavaScript, and proficiency in working with Figma. I am diligently working to acquire new
+                        knowledge every day.
+                    </p>
+                    <p class="contTwo__bacgroundText" data-theme="ru">Привет, меня зовут Полина Тармасова. Мне 24 года.
+                        За свою жизнь я успела побывать кассиром, работником зоопарка, гончаром, прачкой и строителем.
+                        Наконец, я нашла своё место в IT-индустрии! Я учусь на фронтенд-разработчика. Мои знания уже
+                        включают в себя верстку, основы JavaScript и умение работать с Figma. Мой английский пока что на
+                        уровне A1. Я усердно работаю над тем, чтобы получать новые знания каждый день.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container contThree">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="contThree__text" data-theme="eng">I will be a responsible worker and a pleasant colleague.
+                        I look forward
+                        to receiving feedback from you!</p>
+                    <p class="contThree__text" data-theme="ru">Я буду ответственным работником и приятной коллегой. Жду
+                        с нетерпением обратной связи!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center" id="myWorks">
+                    <a href="https://t.me/+79961775607" target="_blank"><img src="img/telegWhite.png"
+                            class="contThree__massengers" data-theme="ligth" alt="телеграмм"></a>
+                    <a href="https://t.me/+79961775607" target="_blank"><img src="img/telegBlack.png"
+                            class="contThree__massengers" data-theme="dark" alt="телеграмм"></a>
+                    <a href="https://vk.com/polinatarmasova" target="_blank"><img src="img/vkWhite.png"
+                            class="contThree__massengers" data-theme="ligth" alt="вконтакте"></a>
+                    <a href="https://vk.com/polinatarmasova" target="_blank"><img src="img/vkBlack.png"
+                            class="contThree__massengers" data-theme="dark" alt="вконтакте"></a>
+                </div>
+            </div>
+        </div>
+        <div class="container contFour">
+            <div class="row">
+                <div class="col-4">
+                    <div class="styleCards contFour__cardFront" id="E3DD4E">
+                        <p class="contFour__topic" id="yellow_card">FRONT<br>END</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="styleCards contFour__cardBack" id="F16363">
+                        <p class="contFour__topic" id="purpur_card">BACK<br>END</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="styleCards contFour__cardUxUi" id="6CDAC6">
+                        <p class="contFour__topic" id="blu_card">UX<br>UI</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Модальное окно по карточкам. Карточка frontend-->
+        <div class="modalContainer__cards_yellow">
+            <div class="modalCard modalCardYellow" id="modal__card_yellow">
+                <ul>
+                    <li class="text-center">
+                        <a href="#" class="linkProgecr" data-theme="ru">//////////////////</a>
+                        <a href="#" class="linkProgecr" data-theme="eng">//////////////////</a>
+                    </li>
+                    <li class="text-center">
+                        <a href="#" class="linkProgecr" data-theme="ru">//////////////////</a>
+                        <a href="#" class="linkProgecr" data-theme="eng">//////////////////</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="modalContainer__cards_purpur">
+            <div class="modalCard modalCardPurpur" id="modal__card_purpur">
+                <ul>
+                    <li class="text-center">
+                        <a href="#" class="linkProgecr" data-theme="ru">//////////////////</a>
+                        <a href="#" class="linkProgecr" data-theme="eng">//////////////////</a>
+                    </li>
+                    <li class="text-center">
+                        <a href="#" class="linkProgecr" data-theme="ru">//////////////////</a>
+                        <a href="#" class="linkProgecr" data-theme="eng">//////////////////</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="modalContainer__cards_blu">
+            <div class="modalCard modalCardBlu" id="modal__card_blu">
+                <ul>
+                    <li class="text-center">
+                        <a href="#" class="linkProgecr" data-theme="ru">//////////////////</a>
+                        <a href="#" class="linkProgecr" data-theme="eng">//////////////////</a>
+                    </li>
+                    <li class="text-center">
+                        <a href="#" class="linkProgecr" data-theme="ru">//////////////////</a>
+                        <a href="#" class="linkProgecr" data-theme="eng">//////////////////</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        <!--Модальное окно по карточкам. Карточка frontend-->
+
+    </main>
+    <footer class="d-flex">
+        <a href="https://ekat.ithub.ru/" target="_blank"><img class="footer__photo_logoCollege" data-theme="ligth"
+                src="img/itHubWhite.png" alt="логотип колледжа"></a>
+        <a href="https://ekat.ithub.ru/" target="_blank"><img class="footer__photo_logoCollege" data-theme="dark"
+                src="img/itHubBlack.png" alt="логотип колледжа"></a>
+        <div class="align-self-center d-flex footer__information">
+            <a href="https://t.me/+79961775607" target="_blank"><img src="img/telegWhite.png" class="footer__massengers"
+                    data-theme="ligth" alt="телеграмм"></a>
+            <a href="https://t.me/+79961775607" target="_blank"><img src="img/telegBlack.png" class="footer__massengers"
+                    data-theme="dark" alt="телеграмм"></a>
+            <a href="https://vk.com/polinatarmasova" target="_blank"><img src="img/vkWhite.png"
+                    class="footer__massengers" data-theme="ligth" alt="вконтакте"></a>
+            <a href="https://vk.com/polinatarmasova" target="_blank"><img src="img/vkBlack.png"
+                    class="footer__massengers" data-theme="dark" alt="вконтакте"></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
