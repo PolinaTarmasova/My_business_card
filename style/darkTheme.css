@@ -43,15 +43,7 @@ a {
     display: none;
 }
 
-
 .footer__massengers[data-theme="ligth"] {
     display: block;
 }
 
-.footer__photo_logoCollege[data-theme="dark"] {
-    display: none;
-}
-
-.footer__photo_logoCollege[data-theme="ligth"] {
-    display: block;
-}
