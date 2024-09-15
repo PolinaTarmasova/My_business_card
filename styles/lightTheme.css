@@ -1,0 +1,23 @@
+body{
+    background-color: #FDC7D3;
+    color: #373536;
+    transition: 1s;
+}
+a{
+    color: #373536;
+}
+.headerNaw__list button{
+    background-color: #373536;
+    color: white;
+}
+.myWorks__list p{
+    color: #373536;
+}
+
+.headerLogotype__logotype .theme__dark,
+.headerLogotype__icons_theme .headerLogotype__icons_themeDark,
+.headerLogotype__icons_lang .theme__dark,
+.socialMedia .theme__dark,
+footer .theme__dark{
+    display: none;
+}

@@ -1,0 +1,147 @@
+@font-face {
+    font-family: "Correction Brush";
+    src: url("../fonts/correctionBrush.ttf");
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Regular.ttf");
+}
+html{
+    scroll-behavior: smooth;
+}
+a, button{
+    text-decoration: none;
+    cursor: pointer;
+    font-family: "Correction Brush", serif;
+}
+header{
+    margin: 4% 4% 80px 4%;
+}
+.headerLogotype{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.headerLogotype__logotype img{
+    width: 120px;
+}
+.headerNaw__list{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+}
+.headerNaw__list a:hover,
+.headerLogotype__icons a:hover,
+.socialMedia a:hover,
+.myWorks__list a:hover{
+    opacity: 0.7;
+    transition: 1s;
+}
+.headerNaw__list li a, button{
+    font-size: 40px;
+    padding: 8px 32px;
+    border: none;
+    border-radius: 24px;
+}
+.headerLogotype__icons{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.headerLogotype__icons_theme img, .headerLogotype__icons_lang img{
+    width: 40px;
+}
+.ticker{
+    margin-bottom: 80px;
+    overflow: hidden;
+    text-overflow: clip;
+    white-space: nowrap;
+}
+.ticker__animation{
+    width: 200%;
+    animation: tickerAnimation 8s linear infinite;
+}
+.ticker__animation span{
+    font-family: "Correction Brush", serif;
+    font-size: 78px;
+    text-align: center;
+    width: 100%;
+}
+@keyframes tickerAnimation {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
+.aboutMe{
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+.aboutMe img{
+    width: 400px;
+    height: 100%;
+    border-radius: 24px;
+}
+.aboutMe p{
+    font-family: "Montserrat", serif;
+    font-size: 24px;
+    line-height: 32px;
+    width: 616px;
+    align-self: center;
+}
+.socialMedia ul{
+    display: flex;
+    gap: 160px;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+.socialMedia img{
+    width: 160px;
+}
+.myWorks__list{
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    margin-bottom: 80px;
+}
+.myWorks__list div{
+    width: 320px;
+    height: 320px;
+    padding: 100px 0;
+    border-radius: 30px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+.myWorks__list div p{
+    font-family: "Correction Brush", serif;
+    font-size: 64px;
+}
+.myWorks__list_yellow{
+    background-color: #FFF7B2;
+}
+.myWorks__list_blu{
+    background-color: #ABF5FF;
+}
+.myWorks__list_red{
+    background-color: #AB9EFF;
+}
+footer{
+    margin: 0 4% 4% 4%;
+    display: flex;
+    gap: 160px;
+    justify-content: center;
+}
+footer img{
+    width: 160px;
+}
+footer p{
+    align-self: center;
+    font-family: "Montserrat", serif;
+    font-size: 32px;
+}

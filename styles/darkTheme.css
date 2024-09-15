@@ -1,0 +1,22 @@
+body{
+     background-color: #1A0E20;
+     color: white;
+     transition: 1s;
+ }
+ a{
+     color: white;
+ }
+ .headerNaw__list button{
+     background-color: #9CD0B5;
+     color: #1A0E20;
+ }
+ .myWorks__list p{
+     color: #1A0E20;
+ }
+ .headerLogotype__logotype .theme__light,
+ .headerLogotype__icons_theme .headerLogotype__icons_themeLight,
+ .headerLogotype__icons_lang .theme__light,
+ .socialMedia .theme__light,
+ footer .theme__light{
+     display: none;
+ }
