@@ -1,21 +1,22 @@
 //Смена темы
-let themes = document.querySelectorAll(".theme__switch");
-let linkTheme = document.getElementById("linkTheme");
+const themes = document.querySelectorAll(".theme__switch");
+const lang_button = document.querySelectorAll(".lang_button");
+const linkTheme = document.getElementById("linkTheme");
+const linkLand = document.getElementById("linkLand");
 
-if(localStorage.getItem("theme") === "dark"){
-    linkTheme.href = "styles/darkTheme.css";
-} else {
-    linkTheme.href = "styles/lightTheme.css";
-}
+document.addEventListener("click", function (event){
+    if(event.target.className.length > 0){
+        switchThemeOrLang(lang_button, linkLand);
+    } else {
+        switchThemeOrLang(themes, linkTheme);
+    }
+});
 
-for(let i = 0; i < themes.length; i++){
-    themes[i].onclick = function () {
-        if(themes[i].classList.contains("headerLogotype__icons_themeDark")){
-            linkTheme.href = "styles/lightTheme.css";
-            localStorage.setItem("theme", "light");
-        } else {
-            linkTheme.href = "styles/darkTheme.css";
-            localStorage.setItem("theme", "dark");
+function switchThemeOrLang(array, link) {
+    for (let i = 0; i < array.length; i++) {
+        array[i].onclick = function () {
+            link.href = `styles/${Object.values(array[i].dataset)[0]}.css`;
+            localStorage.setItem(Object.keys(array[i].dataset)[0], Object.values(array[i].dataset)[0]);
         }
     }
 }

@@ -10,7 +10,8 @@
     <link rel="icon" href="img/dark/logotype_head.svg">
     <link rel="stylesheet" href="styles/ericMeyer.css">
     <link rel="stylesheet" href="styles/position.css">
-    <link rel="stylesheet" href="styles/darkTheme.css" id="linkTheme">
+    <link rel="stylesheet" href="styles/eng.css" id="linkLand">
+    <link rel="stylesheet" href="styles/dark.css" id="linkTheme">
     <script defer src="logics/scriptThemeAndLang.js"></script>
     <title>Polina's works</title>
 </head>
@@ -24,19 +25,30 @@
             <nav class="headerNaw">
                 <ul class="headerNaw__list">
                     <li>
-                        <a href="#aboutMe__href">
+                        <a class="change_lang" data-lang="ru" href="#aboutMe__href">
                             ОБО МНЕ
                         </a>
-                    </li>
-                    <li>
-                        <a href="#socialMedia__id">
-                            СОЦСЕТИ
+                        <a class="change_lang" data-lang="eng" href="#aboutMe__href">
+                            ABOUT
                         </a>
                     </li>
                     <li>
-                        <a href="#myWorks__href">
+                        <a class="change_lang" data-lang="ru" href="#socialMedia__id">
+                            СОЦСЕТИ
+                        </a>
+                        <a class="change_lang" data-lang="eng" href="#socialMedia__id">
+                            SOCIAL NETWORKS
+                        </a>
+                    </li>
+                    <li>
+                        <a class="change_lang" data-lang="ru" href="#myWorks__href">
                             <button>
                                 МОИ РАБОТЫ
+                            </button>
+                        </a>
+                        <a class="change_lang" data-lang="eng" href="#myWorks__href">
+                            <button>
+                                MY WORKS
                             </button>
                         </a>
                     </li>
@@ -44,19 +56,23 @@
             </nav>
             <div class="headerLogotype__icons">
                 <div class="headerLogotype__icons_theme">
-                    <a class="theme__switch headerLogotype__icons_themeDark">
+                    <a class="theme__switch" data-theme = "light">
                         <img src="img/dark/phone_icon.svg" alt="иконка светлой темы">
                     </a>
-                    <a class="theme__switch headerLogotype__icons_themeLight">
+                    <a class="theme__switch" data-theme = "dark">
                         <img src="img/light/phone_icon.svg" alt="иконка темной темы">
                     </a>
                 </div>
                 <div class="headerLogotype__icons_lang">
                     <a>
-                        <img class="theme__dark" src="img/dark/length_icon_eng.svg" alt="иконка языка">
-                        <img class="theme__light" src="img/light/length_icon_eng.svg" alt="иконка языка">
-                        <img class="theme__dark" src="img/dark/length_icon_ru.svg" alt="иконка языка">
-                        <img class="theme__light" src="img/light/length_icon_ru.svg" alt="иконка языка">
+                        <img class="theme__dark change_lang lang_button" data-lang="ru"
+                             src="img/dark/length_icon_eng.svg" alt="иконка языка">
+                        <img class="theme__light change_lang lang_button" data-lang="ru"
+                             src="img/light/length_icon_eng.svg" alt="иконка языка">
+                        <img class="theme__dark change_lang lang_button" data-lang="eng"
+                             src="img/dark/length_icon_ru.svg" alt="иконка языка">
+                        <img class="theme__light change_lang lang_button" data-lang="eng"
+                             src="img/light/length_icon_ru.svg" alt="иконка языка">
                     </a>
                 </div>
             </div>
@@ -64,7 +80,7 @@
     </header>
     <main>
         <section class="ticker">
-            <div class="ticker__animation">
+            <div class="ticker__animation change_lang" data-lang="ru">
                 <span>
                     Я ИЩУ РАБОТУ, ГОТОВА К СОТРУДНИЧЕСТВУ. Я ИЩУ РАБОТУ, ГОТОВА К СОТРУДНИЧЕСТВУ.
                 </span>
@@ -84,10 +100,30 @@
                     Я ИЩУ РАБОТУ, ГОТОВА К СОТРУДНИЧЕСТВУ. Я ИЩУ РАБОТУ, ГОТОВА К СОТРУДНИЧЕСТВУ.
                 </span>
             </div>
+            <div class="ticker__animation change_lang" data-lang="eng">
+                <span>
+                    I'M LOOKING FOR A JOB, READY TO COOPERATE. I'M LOOKING FOR A JOB, READY TO COOPERATE.
+                </span>
+                <span>
+                   I'M LOOKING FOR A JOB, READY TO COOPERATE. I'M LOOKING FOR A JOB, READY TO COOPERATE.
+                </span>
+                <span>
+                    I'M LOOKING FOR A JOB, READY TO COOPERATE. I'M LOOKING FOR A JOB, READY TO COOPERATE.
+                </span>
+                <span>
+                    I'M LOOKING FOR A JOB, READY TO COOPERATE. I'M LOOKING FOR A JOB, READY TO COOPERATE.
+                </span>
+                <span>
+                    I'M LOOKING FOR A JOB, READY TO COOPERATE. I'M LOOKING FOR A JOB, READY TO COOPERATE.
+                </span>
+                <span>
+                    I'M LOOKING FOR A JOB, READY TO COOPERATE. I'M LOOKING FOR A JOB, READY TO COOPERATE.
+                </span>
+            </div>
         </section>
         <section class="aboutMe" id="aboutMe__href">
             <img src="img/my_photo.jpg" alt="моя фотография">
-            <p>
+            <p class="change_lang" data-lang="ru">
                 Привет, меня зовут Полина Тармасова. Мне 25 лет.
                 <br>
                 <br>
@@ -99,22 +135,34 @@
                 и умение работать с Figma. Мой английский пока что на уровне A1. Я усердно работаю над тем,
                 чтобы получать новые знания каждый день.
             </p>
+            <p class="change_lang" data-lang="eng">
+                Hi, my name is Polina Tarmasova. I'm 25 years old.
+                <br>
+                <br>
+                In my life, I've worked as a cashier, a zookeeper, a potter, a laundress and a construction worker.
+                Finally, I found my place in the IT industry!
+                <br>
+                <br>
+                I am studying to be a frontend developer. My knowledge already includes layout, basic JavaScript.
+                and Figma. My English is still at A1 level. I'm working hard
+                to learn new things every day.
+            </p>
         </section>
         <section class="socialMedia" id="socialMedia__id">
             <ul>
                 <li>
-                    <a>
+                    <a href="https://vk.com/id847286768" target="_blank">
                         <img class="theme__dark" src="img/dark/vk_icon.svg" alt="иконка вконтакте">
                         <img class="theme__light" src="img/light/vk_icon.svg" alt="иконка вконтакте">
                     </a>
                 </li>
                 <li>
-                    <a>
+                    <a href="https://github.com/PolinaTarmasova" target="_blank">
                         <img src="img/gh_icon.svg" alt="иконка гитхаб">
                     </a>
                 </li>
                 <li>
-                    <a>
+                    <a href="https://t.me/PolinaTarmasova" target="_blank">
                         <img class="theme__dark" src="img/dark/tg_icon.svg" alt="иконка телеграм">
                         <img class="theme__light" src="img/light/tg_icon.svg" alt="иконка телеграм">
                     </a>
@@ -156,7 +204,7 @@
     <footer>
         <img class="theme__dark" src="img/dark/logotype.svg" alt="логотип">
         <img class="theme__light" src="img/light/logotype.svg" alt="логотип">
-        <p>
+        <p class="change_lang" data-lang="ru">
             со мной можно связаться
             <br>
             по номеру телефона
@@ -165,6 +213,18 @@
             <br>
             <br>
             либо по почте
+            <br>
+            polina.xxxxxxxx@gmail.com
+        </p>
+        <p class="change_lang" data-lang="eng">
+            I can be reached
+            <br>
+            by phone number
+            <br>
+            +7-996-xxx-xx-xx
+            <br>
+            <br>
+            either by mail
             <br>
             polina.xxxxxxxx@gmail.com
         </p>

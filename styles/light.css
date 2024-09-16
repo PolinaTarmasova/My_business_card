@@ -1,7 +1,6 @@
 body{
     background-color: #FDC7D3;
     color: #373536;
-    transition: 1s;
 }
 a{
     color: #373536;
@@ -15,9 +14,15 @@ a{
 }
 
 .headerLogotype__logotype .theme__dark,
-.headerLogotype__icons_theme .headerLogotype__icons_themeDark,
 .headerLogotype__icons_lang .theme__dark,
 .socialMedia .theme__dark,
 footer .theme__dark{
     display: none;
+}
+.theme__switch[data-theme="light"]{
+    display: none;
+}
+
+.theme__switch[data-theme="dark"]{
+    display: block;
 }

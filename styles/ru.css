@@ -1,0 +1,6 @@
+.change_lang[data-lang = "ru"] {
+    display: none;
+}
+.change_lang[data-lang = "eng"] {
+    display: block;
+}

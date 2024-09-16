@@ -1,7 +1,6 @@
 body{
      background-color: #1A0E20;
      color: white;
-     transition: 1s;
  }
  a{
      color: white;
@@ -14,9 +13,16 @@ body{
      color: #1A0E20;
  }
  .headerLogotype__logotype .theme__light,
- .headerLogotype__icons_theme .headerLogotype__icons_themeLight,
  .headerLogotype__icons_lang .theme__light,
  .socialMedia .theme__light,
  footer .theme__light{
      display: none;
  }
+
+ .theme__switch[data-theme="light"]{
+     display: block;
+ }
+
+.theme__switch[data-theme="dark"]{
+    display: none;
+}
