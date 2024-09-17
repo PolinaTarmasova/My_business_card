@@ -4,3 +4,14 @@
 .change_lang[data-lang = "eng"] {
     display: none;
 }
+.body_animation{
+    animation: showBlock 1s;
+}
+@keyframes showBlock{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

@@ -12,15 +12,17 @@ if (savedLang) {
     linkLand.href = `styles/${savedLang}.css`;
 }
 
-for(let i = 0; i < themes.length; i++){
-    themes[i].onclick = function (){
-      switchThemeOrLang(themes[i], linkTheme);
+for(let i = 0; i < themes.length; i++) {
+    themes[i].onclick = function () {
+        switchThemeOrLang(themes[i], linkTheme);
+        timerAnimation();
     }
 }
 
-for(let i = 0; i < lang_button.length; i++) {
+for (let i = 0; i < lang_button.length; i++) {
     lang_button[i].onclick = function () {
         switchThemeOrLang(lang_button[i], linkLand);
+        timerAnimation();
     }
 }
 
@@ -29,4 +31,12 @@ function switchThemeOrLang(array, link) {
     const value = Object.values(array.dataset)[0];
     link.href = `styles/${value}.css`;
     localStorage.setItem(key, value);
+}
+
+function timerAnimation(){
+    const body = document.querySelector("body");
+    body.classList.add("body_animation");
+    setTimeout(() => {
+        body.classList.remove('body_animation');
+    }, 500);
 }

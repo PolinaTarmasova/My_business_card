@@ -1,7 +1,6 @@
 body{
      background-color: #1A0E20;
      color: white;
-     transition: 1s;
  }
  a{
      color: white;
@@ -19,11 +18,20 @@ body{
  footer .theme__light{
      display: none;
  }
-
  .theme__switch[data-theme="light"]{
      display: block;
  }
-
 .theme__switch[data-theme="dark"]{
     display: none;
+}
+.body_animation{
+    animation: showBlock 1s;
+}
+@keyframes showBlock{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }

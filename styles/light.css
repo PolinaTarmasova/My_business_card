@@ -1,7 +1,6 @@
 body{
     background-color: #FDC7D3;
     color: #373536;
-    transition: 1s;
 }
 a{
     color: #373536;
@@ -13,7 +12,6 @@ a{
 .myWorks__list p{
     color: #373536;
 }
-
 .headerLogotype__logotype .theme__dark,
 .headerLogotype__icons_lang .theme__dark,
 .socialMedia .theme__dark,
@@ -23,7 +21,17 @@ footer .theme__dark{
 .theme__switch[data-theme="light"]{
     display: none;
 }
-
 .theme__switch[data-theme="dark"]{
     display: block;
+}
+.body_animation{
+    animation: showBlock 1s;
+}
+@keyframes showBlock{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
