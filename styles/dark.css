@@ -1,6 +1,7 @@
 body{
      background-color: #1A0E20;
      color: white;
+     transition: 1s;
  }
  a{
      color: white;
